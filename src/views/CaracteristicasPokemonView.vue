@@ -102,4 +102,43 @@ export default {
 .btn-danger {
   margin-left: 10px;
 }
+.card-header {
+  background-color: #ffcc00; /* Cambiamos el color de fondo del encabezado */
+  border-bottom: 2px solid #ff9900; /* Aumentamos el grosor y cambiamos el color del borde inferior */
+}
+
+.card-title {
+  margin: 0;
+  font-size: 2rem; /* Aumentamos el tamaño de la fuente del título */
+  color: #333;
+  text-transform: uppercase; /* Convertimos el texto del título en mayúsculas */
+}
+
+.card-body {
+  padding: 2rem;
+  background-color: #f7f7f7; /* Cambiamos el color de fondo del cuerpo de la tarjeta */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Agregamos bordes redondeados a la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos una sombra sutil */
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.btn-danger {
+  margin-left: 10px;
+  background-color: #ff6666; /* Cambiamos el color de fondo del botón */
+  border-color: #ff3333; /* Cambiamos el color del borde del botón */
+}
+
+.btn-danger:hover {
+  background-color: #ff4d4d; /* Cambiamos el color de fondo del botón al pasar el mouse */
+  border-color: #ff1a1a; /* Cambiamos el color del borde del botón al pasar el mouse */
+}
 </style>
