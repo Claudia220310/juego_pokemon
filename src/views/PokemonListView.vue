@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="row p-3 mt-3 mb-3 d-flex justify-content-center">
-      <div v-for="pokemon in pokemons" :key="pokemon.name" class="col-6 col-md-4 col-lg-3 mb-4">
+      <div v-for="pokemon in pokemons" :key="pokemon.name" class="col-4 col-md-4 col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <div class="card-body">
             <h5 class="card-title text-capitalize">{{ pokemon.name }}</h5>
@@ -18,16 +18,17 @@
       </div>
     </div>
     <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item"><a class="page-link" href="#" @click="prevPage" :disabled="!prevUrl">Anterior</a></li>
-        <li class="page-item"><a class="page-link" href="#" @click="nextPage" :disabled="!nextUrl">1</a></li>
-        <li class="page-item"><a class="page-link" href="#" @click="nextPage" :disabled="!nextUrl">2</a></li>
-        <li class="page-item"><a class="page-link" href="#" @click="nextPage" :disabled="!nextUrl">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" @click="nextPage" :disabled="!nextUrl">Siguiente</a>
-        </li>
-      </ul>
-    </nav>
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#" @click.prevent="prevPage" :disabled="!prevUrl">Anterior</a></li>
+    <li class="page-item"><a class="page-link" href="#" @click.prevent="nextPage" :disabled="!nextUrl">1</a></li>
+    <li class="page-item"><a class="page-link" href="#" @click.prevent="nextPage" :disabled="!nextUrl">2</a></li>
+    <li class="page-item"><a class="page-link" href="#" @click.prevent="nextPage" :disabled="!nextUrl">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" @click.prevent="nextPage" :disabled="!nextUrl">Siguiente</a>
+    </li>
+  </ul>
+</nav>
+
   </div>
 </template>
 
